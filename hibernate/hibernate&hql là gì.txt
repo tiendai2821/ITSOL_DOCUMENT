@@ -1,0 +1,18 @@
+Hibernate là gì? hql là gì?
+1. hibernate = jdbc transaction
+- chỉ là những bộ cụ, kỹ thuật được tạo ra để làm việc với ngôn ngữ truy vấn.
+- gốc của vấn đề phải nằm ở ngôn ngữ truy vấn.
+2. hql và sql?
+- sql: truy vấn csdl dưới dạng bảng
++ select ra 1 bảng
++ insert vào từ 1 hàng
+- hql: truy vấn csdl dưới dạng các object
++ select ra 1 list
++ insert vào từ 1 object
+
+3. tại sao không dùng hql cho môi trường ngoài?
+
++ Phân tán: SQL dễ dàng hơn cho việc phân tán. 
++ Bộ nhớ: SQL tiết kiệm bộ nhớ hơn rất nhiều so với java, sử dụng hibernate framework còn nặng hơn với java core
++ HQL không thể tồn tại độc lập, do nó làm việc với các đối tượng của ngôn ngữ lập trình. Nó chỉ có thể làm việc trong môi trường của ngôn ngữ lập trình.
+Trong khi đó sql có thể sống được cả trong ngôn ngữ lập trình dựa vào các công cụ lập trình sẵn, vừa có thể sống được trong môi trường ngoài.

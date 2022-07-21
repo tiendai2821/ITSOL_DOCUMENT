@@ -1,0 +1,5 @@
+- cơ chế buffer, cơ chế stream, cơ chế bth
+- thêm true parameter để ghi thêm, tránh ghi lại
+- serialize: Chuyển dữ liệu sang byte ( đơn vị trung gian ) để chuyển dữ liệu từ các cơ chế lưu khác nhau ( java sang db)
+- try with resource và try catch
+- đường dẫn tương đối:..(back 1 cấp )/abc/def

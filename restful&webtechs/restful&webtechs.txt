@@ -1,0 +1,21 @@
+
+*web techs:
+log: check lại lịch sử ( ghi lại những ai request, bao nhiêu request không đc response)
++ log lever: debug,info
+lombok: 
+- http message: truyền tải gói tin qua internet
++ header: + method: get/post... ,httpstatus
++ body
+
+
+*restful:
+- chức nawgn quan trọng nhất: quy định các http method: get,post,put,deltete
+- nguyên tắc thiết kế url
+- rest = tiêu chuẩn thiết kế restful api, 6 tiêu chí:
+1. chia tách client và server rõ ràng
+2. không lưu trạng thái người dùng lên máy chủ (jwt), (phân biệt với cookie- lưu trạng thái đăng nhập lên máy chủ)
+3. lưu vào cache
+4. đặt tên url theo đúng nguyên tắc
+5. hệ thống phân lớp ( mô hình 3 lớp )
+6. code on back end
+- postman: client không giao diện, dùng để test api

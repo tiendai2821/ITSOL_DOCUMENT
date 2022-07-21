@@ -1,0 +1,6 @@
+--- viết group by
+1, viêt from trước
+2, viết group by
+3, viết count
+4, viết select
+5, viết having

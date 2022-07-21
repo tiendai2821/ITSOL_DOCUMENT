@@ -1,0 +1,7 @@
+- Mục đích của đa hình:
++ tái sử dụng code
+- Các kiểu đa hình:
++ Đa hình lúc compile: overload
++ Đa hình lúc runtime: override
+- Upcasting:
++ Ép con về cha

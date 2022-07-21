@@ -1,0 +1,87 @@
+-- bài làm
+1. -- sắp xếp
+select * from student ORDER BY id;
+select * from student ORDER BY gender;
+select * from student ORDER BY birthday asc, scholarship desc;
+2.--tìm kiếm theo dạng ( like )
+select * from subject;
+select * from subject where name like 'T%';
+3-- 
+select * from student;
+select * from student where student.name like '%i';
+4-- kí tự thứ 2 chứa n => _n%
+select * from faculty where faculty.name like '_n%';
+5--
+
+-- lấy thị.... hoặc ... thị
+select * from student where student.name like '%Thị%';
+6--
+select * from student where substr(student.name,1,1) between 'A' and 'M'order by student.name asc;
+7--
+select * from student where student.scholarship>100000 order by student.faculty_id asc;
+8--
+select * from student where student.scholarship >=150000 and student.hometown = 'Hà Nội';
+9--
+-- chỉ được để 1 định dạng duy nhất, nên là yyyymmdd
+select * from student where student.birthday between to_date(19910101, 'YYYYMMDD') and to_date(19920605, 'YYYYMMDD');
+
+10--
+select * from student where student.scholarship >=80000 and student.scholarship <=150000;
+-- hoặc
+select * from student where student.scholarship between 80000 and 150000;
+
+11--
+select * from subject where subject.lesson_quantity >=30 and subject.lesson_quantity <=45;
+
+-- B
+--1 khó
+    select id, name, gender, birthday, hometown, 
+    case 
+        when scholarship > 500000 then 'Học bổng cao' 
+        else  'Học bổng trung bình' 
+    end   loai_hoc_bong 
+    from student;
+2 -- tính tổng sinh viên của trường
+select count(*) as tongsv from student;
+3--
+select gender,count(*) from student group by gender;
+4-- làm sao để show ra cả faculty_name
+select faculty_id,count(*) studentNum from student group by student.faculty_id;
+
+
+
+5--
+select subject_id, count(distinct student_id)from exam_management group by subject_id
+6--
+
+select student_id, count(distinct subject_id) from exam_management group by student_id;
+
+7--
+select faculty_id,count(student.scholarship)from student group by student.faculty_id;
+8-- nvl để trong th null thì thay thế = 1 giá trị khác
+select faculty_id, max(nvl(student.scholarship,0)) from student group by student.faculty_id;
+
+
+
+
+9--
+10--
+11--
+12--
+13--
+14--
+15--
+16--
+
+
+
+17--
+select * from student where student.scholarship = (select max(student.scholarship) from student);
+--C
+1 --
+select * from student where to_char(birthday,'MM') = '02' and student.hometown = 'Hà Nội';
+2--
+select * from student where to_number(to_char(sysdate,'YYYY'))- to_number(to_char(birthday,'YYYY'))>=20;
+3--
+select * from student where to_number(to_char(birthday,'MM')) in (1,2,3) and hometown = 'Hà Nội';
+D--

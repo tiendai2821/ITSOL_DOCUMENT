@@ -1,0 +1,14 @@
+Đóng gói:
+1 nguyên tắc viết code của java ở việc lấy dữ liệu từ các đối tượng khác thông qua phương thức getter và setter
++ Phần xử lý dữ liệu được thao tác trong hàm setter
++ Phần gửi dữ liệu được đưa trong phần getter
+Mục đích của đóng gói:
+1. Tránh thao tác dữ liệu bên ngoài bừa bãi
+-> viết code có nguyên tắc, không bừa bãi, dễ quản lý code
+2. Đảm bảo tính bảo mật 
+-> Có những biến riêng của class cần được che giấu.
+-> Mọi thao tác với vùng bên ngoài đều thông qua getter -> khó khăn trong việc đoán toàn bộ thuộc tính từ hàm
+3. access modifiers
+4. static, final
+- static: truy cập trực tiếp thông qua lớp
+- final: cuối cùng, hiểu là giá trị cuối cùng, không thể thay đổi ở chỗ khác

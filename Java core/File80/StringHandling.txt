@@ -1,0 +1,21 @@
+*String
+- string pool
+- tham chiếu = gán 1 đối tượng
+- tham trị = gán cho 1 giá trị
+- String bất biến, không thay đổi giá trị trong ô nhớ mà nó trỏ tới, nó chỉ thêm ô nhớ mới cho thao tác
+*String buffer / builder
+- Thay đổi trực tiếp giá trị trong ô nhớ nó trỏ tới
+* khác biệt string buffer và builder trong bất đồng bộ
+- khi nhiều luồng thao tác:
++ buffer bắt xếp hàng
++ builder cho vào cùng 1 lúc ( xung đột tài nguyên )
+-> đó là lý do 2 thằng 2 hàm giống nhau nhưng vẫn sinh ra ở 2 thằng
+*String tokenizer: =  hàm xử lý các String split 
+*Regex (Regular Expression) ( Biểu thức chính quy)
+- Regex101.com
+- Dùng nhiều cho validate
+----
+Cần nhớ:
+1. String bất biến
+2. String buffer,String builder
+3. String token

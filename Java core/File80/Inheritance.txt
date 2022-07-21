@@ -1,0 +1,9 @@
+- Kế thừa:
++ Đơn kế thừa
++ Kế thừa nhiều cấp
++ Kế thừa thứ bậc
+- This và Super:
++ This: Tham chiếu đến đối tượng hiện tại
++ Super: Tham chiếu đến đối tượng cha gần nhất
++ Super gọi trực tiếp constructor của cha
+- Constructor: không đối và đủ đối

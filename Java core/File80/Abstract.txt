@@ -1,0 +1,11 @@
+- Mục đích của abstract
++ Tái sử dụng code
++ Tiết kiệm bộ nhớ
+- Tính đa hình thể hiện ở abstract class, interface
+- Khác nhau giữa interface và nomal class:
++ interface kế thừa hành vi
++ nomal class bắt kế thừa toàn bộ
+- Khác nhau giữa interface và abstract class:
++ interface kế thừa hành vi, 2 đối tượng khác thuộc tính vẫn có thể kế thừa 1 hành vi
++ abstract class dùng cho các đối tượng cùng thuộc tính
+- default class trong interface: thường dùng để xử lý cho các phương thức chung của các lớp implements ( có thể ghi đè)

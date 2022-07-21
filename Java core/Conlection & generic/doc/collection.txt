@@ -1,0 +1,16 @@
+class object: equal,hashcode: mặc định là kế thừa class object, equal = tham trị
+- khi sử dụng equal cần lưu ý
++ nếu equal 1 String: không vấn đề, do String chỉ có 1 thuộc tính mang giá trị
++ nếu equal 1 object thông thường, cần override lại hàm equal từ lớp cha object để định nghĩa lại
+map,set,list, hash set
+- map
+- set
+- hashset
+- list
+link list: ds lk don ( khó)
+fast random access
+compararator
+toongr quat hoa ve mat du lieu
+-- 10/6
+-- collection
+-- bài tập xe buyt

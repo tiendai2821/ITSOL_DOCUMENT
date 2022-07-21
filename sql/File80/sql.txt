@@ -1,0 +1,15 @@
+- khác nhau giữa delele và truncase
+- case-when
+- having vs where
++ having: count,sum ,avg, max,min
++ where
+- grouping in sql: tư tưởng gom nhóm
+- phân biệt count (id), count(*), count(1)
+- các loại join:
+inner join
+outer join
++ left join
++ right join
++ full outer join
+cross join
+self join

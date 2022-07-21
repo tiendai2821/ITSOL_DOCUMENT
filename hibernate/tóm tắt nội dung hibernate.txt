@@ -1,0 +1,6 @@
+porm: chứa thông tin project, lib(dependency), build (plugin,...)
+orm: design pattern
+session & session factory: 1 phiên làm việc với db, mở và đóng session trong db
+hibernate.xml: cấu hình ánh xạ db sang class
++ mapping trong hibernate.xml: tạo @ để đánh dấu thẳng luôn ( tự động mapping) thay vì cấu hình chay cho cột với thuộc tính trong hibernate.maping.xml
+HQL
